@@ -1,0 +1,257 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif; /* Changed to Poppins for consistency */
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Logo and Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 26px; /* Slightly larger */
+    color: #fff;
+}
+
+.logo span {
+    color: #ff8c00;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px; /* Increased font size */
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #ff8c00;
+}
+
+
+/* Main content */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.main-content h1 {
+    font-size: 54px; /* Increased for more emphasis */
+    font-weight: 700; /* Bold for prominence */
+}
+
+.main-content span {
+    color: #ff8c00;
+}
+
+.main-content h3 {
+    margin: 20px 0 10px;
+    font-size: 32px; /* Increased slightly */
+}
+
+.main-content p {
+    font-size: 20px; /* Slightly larger */
+    color: #ccc;
+}
+
+.main-content .btn {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 12px 24px; /* Increased padding */
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 18px; /* Larger font size */
+    transition: background 0.3s;
+}
+
+.main-content .btn:hover {
+    background-color: #e67e00;
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-container img {
+    width: 200%;
+    max-width: 700px;
+    height: auto;
+    background-color: transparent;
+    mix-blend-mode: screen;
+    object-fit: cover;
+    transform: translateY(-50px) translateX(90px) scale(1); /* Change scale to adjust size */
+}
+
+
+/* Light effect */
+.light {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Slightly larger light effect */
+    height: 250px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1.5), rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+}
+
+/* About Section */
+#about {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; /* Slightly larger font */
+    line-height: 1.7;
+    color: #e0e0e0;
+    padding: 60px 20px;
+    border-bottom: 1px solid #333;
+}
+
+#about h2 {
+    font-size: 2.7rem; /* Larger title */
+    font-weight: 600;
+    color: #ff8c00;
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem; /* Slightly larger font for projects */
+    line-height: 1.8;
+    color: #e0e0e0;
+    padding: 60px 20px;
+    border-bottom: 1px solid #333;
+}
+
+#projects h2 {
+    font-size: 2.7rem; /* Larger title */
+    font-weight: 600;
+    color: #ff8c00;
+    margin-bottom: 20px;
+}
+
+#projects h3 {
+    font-size: 1.6rem; /* Larger font for project titles */
+    font-weight: 500;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Contact and Resume Sections */
+#contact, #resume {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; /* Slightly larger */
+    line-height: 1.7;
+    color: #e0e0e0;
+    padding: 60px 20px;
+    border-bottom: 1px solid #333;
+}
+
+#contact h2, #resume h2 {
+    font-size: 2.7rem; /* Larger title for emphasis */
+    font-weight: 600;
+    color: #ff8c00;
+    margin-bottom: 20px;
+}
+.download-button {
+    background-color: #ff8c00; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #005983; /* Darker green on hover */
+}
+.linkedin-button {
+    background-color: #ff8c00; /* LinkedIn's official blue */
+    color: white;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.linkedin-button:hover {
+    background-color: #005983; /* Darker blue for hover effect */
+}
+
+.insta-button {
+    background-color: #ff8c00; 
+    color: white;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.insta-button:hover {
+    background-color: #005983; /* Darker blue for hover effect */
+}
+
+#research {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; /* Slightly larger font */
+    line-height: 1.7;
+    color: #e0e0e0;
+    padding: 60px 20px;
+    border-bottom: 1px solid #333;
+}
+
+#research h2 {
+    font-size: 2.7rem; /* Larger title */
+    font-weight: 600;
+    color: #ff8c00;
+    margin-bottom: 20px;
+}
+.section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    scroll-margin-top: 7px; /* Adjust according to navbar height */
+}

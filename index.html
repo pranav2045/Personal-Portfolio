@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="home">
+        <div class="overlay"></div>
+        <div class="container">
+            <nav>
+                <h2 class="logo">Pranav <span>Bade</span></h2>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="content-wrapper">
+                <div class="main-content">
+                    <h1>Hello! I'm <span>Pranav Bade</span></h1>
+                    <h3>Second Year<br>Computer Engineering</h3>
+                    <p>Vishwakarma Institute of Information Technology </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <center><h2>About Me</h2></center>
+        <p>Hello! I'm Pranav Bade, a passionate Computer Science student with a strong foundation in <b>programming, data structures, and algorithms.</b><br>
+        I have hands-on experience in <b>web development and machine learning</b>, with projects ranging from building responsive websites to creating intelligent systems.<br>
+        I thrive in collaborative environments and enjoy solving complex problems through innovative solutions.<br>
+        Currently, I’m honing my skills in advanced data structures and algorithms along with backend development, aiming to contribute to impactful tech solutions in the future.<br><br>
+
+        <strong>Education:</strong><br>
+        I completed my secondary education at Pragati Vidyalaya in Beed, where I achieved several notable accomplishments, including being awarded the NTSE scholarship.<br>
+        For my higher secondary education, I attended Sant Tukaram National Model School in Latur, where I earned a zonal-level award in the International Mathematics Olympiad.<br>
+        I’m currently pursuing a B.Tech degree in Computer Engineering at Vishwakarma Institute of Information Technology.</p>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <center><h2>Resume</h2></center>
+        <p>1. Personal Information:<br>
+        Name: Pranav Bade<br>
+        Email: badepranav2045@gmail.com<br>
+        Phone: 8329016806<br>
+        Location: Maharashtra, India<br><br>
+
+        2. Profile:<br>
+        "I am a second-year Computer Engineering student at Vishwakarma Institutes. My experience spans multiple programming languages including Python, Java, HTML."<br><br>
+
+        <!-- Download Resume button -->
+        <p>Click below to download my resume:</p>
+        <a href="C:\Users\badep\java programs\python programs\my_app\port1\pranav-resume.pdf" download>
+            <button class="download-button">Download Resume (PDF)</button>
+        </a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <center><h2>Projects</h2></center>
+        <h3>1. Food Kart Website</h3>
+        <p>Developed a responsive food cart website using HTML and CSS. The website features an intuitive user interface and mobile responsiveness for a smooth experience across devices.</p>
+
+        <h3>2. Flashcard App</h3>
+        <p>Created a flashcard application using Flutter aimed at enhancing learning through interactive study tools. The app allows users to create, edit, and review flashcards with animations to flip the cards.</p>
+    </section>
+
+    <section id="research" class="section">
+        <center><h2>Research</h2></center>
+        <h3>A novel activation function for detection of Covid-19 usind chest X-ray images.</h3>
+        <p>Our research focuses on developing a novel activation function within a convolutional neural network (CNN) to improve the detection of COVID-19 using chest X-ray images. By introducing a specialized activation function tailored for medical imaging, we aim to enhance the model's ability to differentiate between COVID-19 and other respiratory conditions with higher accuracy. This approach has the potential to streamline early diagnosis, particularly in regions with limited access to PCR testing facilities.</p>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <center><h2>Contact Me</h2></center>
+        <p>Mobile no: 8329016806<br>
+        Email: pranav.22310825@viit.ac.in</p>
+        <p>Connect with me on:
+            <a href="https://www.linkedin.com/in/pranav-bade-05656628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <button class="linkedin-button">LinkedIn</button>
+            </a>
+            <a href="https://www.instagram.com/badepranav_20?igsh=MTQ3eW03NWM5NDl0cA==" target="_blank">
+                <button class="insta-button">Instagram</button>
+            </a>
+        </p>
+    </section>
+
+    <!-- Light effect for design -->
+    <div class="light"></div>
+
+    <script src="script.js"></script>
+   <!-- <script>
+        // Select all the navigation links
+        const navLinks = document.querySelectorAll('nav ul li a');
+      
+        // Loop through each link and add a click event listener
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            // Remove the active class from all links
+            navLinks.forEach(link => link.classList.remove('active'));
+      
+            // Add the active class to the clicked link
+            this.classList.add('active');
+          });
+        });
+      </script>-->
+</body>
+</html>
